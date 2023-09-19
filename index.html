@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child selector</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        article > p {
+            background-color: red;
+        }
+        header > p {
+            background-color: blue;
+        }
+        section > p {
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Article title</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </header>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <section>
+            <p>p in section</p>
+        </section>
+        <section>
+            <article class="comment">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </article>
+        </section>
+    </article>
+</body>
+</html>
